@@ -1,19 +1,30 @@
-# Integration boiler plate
-Repository created for students who want to set up simple integration projects quickly.
+# BattleArena
 
-➡ In this repository, all is ready, just ``$ npm install`` to install packages & watch SASS with ``$ npm run watch``.
+> Jeu de combat dans le navigateur — JavaScript / HTML / Sass.
 
-# Commands
-*Before use the commands, don't forget to install the dependencies with `$ npm install`.*
+## Contexte
 
-- `$ npm run watch` : compile the SASS on save.
-- `$ npm run deploy` : compile the SASS to CSS properly *(more about this below)*.
+Projet école L1 ISTIC (avril 2024). Conception d'un jeu de combat web en duel, avec barres de progression, effets visuels Sass et gameplay temps réel. C'était mon premier projet où j'expérimentais la séparation propre du code en modules JS, le pipeline Sass, et la logique d'animation.
 
-# CSS render
-To compile the SASS to CSS properly *(the ``$ npm run watch`` command only compile but do not autoprefix and clean)*, execute ``$ npm run deploy``.
-This will compile the SASS with :
-- Autoprefixer : add automaticly prefixs to maximize compatibility with all browsers
-- Clean CSS : Removed comments and minify the stylesheet
+## Stack
 
-# Contribute
-Just make pull request to improve this repository 😏
+- JavaScript
+- HTML
+- Sass
+- npm
+
+## Statut
+
+Ancien projet personnel, conservé en archive. **Pas activement maintenu.** L'idée est de garder une trace des étapes d'apprentissage avant l'ère des LLM, et de planifier une refonte propre quand j'aurai du temps.
+
+## Roadmap (refonte si je devais le refaire aujourd'hui)
+
+- Migrer le moteur vers [Phaser 3](https://phaser.io/) ou [Pixi.js](https://pixijs.com/) (gestion native du sprite-sheet, hitboxes, audio).
+- Multijoueur en ligne via WebSocket (Socket.io ou Colyseus côté serveur).
+- Adversaire IA piloté par un LLM (Claude API) — l'IA reçoit l'état du combat en JSON et choisit son action en fonction d'une persona configurable (agressif, défensif, opportuniste).
+- Animations procédurales : Lottie pour les coups spéciaux, GreenSock pour le timing.
+- Mode tournoi avec brackets dynamiques + ladder permanent.
+
+---
+
+_README généré le 2026-04-29 dans le cadre du cleanup général de mes anciens repos GitHub. Co-écrit avec [Claude Code](https://claude.com/claude-code) qui a rédigé le contenu à partir de l'inspection du repo._
